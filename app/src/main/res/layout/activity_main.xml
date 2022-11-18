@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bezh"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/gogono_cocoa_mochi_cyrillic"
+        android:text="Викторина"
+        android:textColor="@color/kor"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/gogono_cocoa_mochi_cyrillic"
+        android:text="или"
+        android:textColor="@color/kor"
+        android:textSize="46dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/gogono_cocoa_mochi_cyrillic"
+        android:text="Ложь"
+        android:textColor="@color/red"
+        android:textSize="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/gogono_cocoa_mochi_cyrillic"
+        android:text="Правда"
+        android:textColor="@color/green"
+        android:textSize="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="51dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="infoClick"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_info_24" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="241dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/yell"
+        android:fontFamily="@font/gogono_cocoa_mochi_cyrillic"
+        android:text="Начать"
+        android:textColor="@color/kor"
+        android:textSize="28dp"
+        android:onClick="goClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.659" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
